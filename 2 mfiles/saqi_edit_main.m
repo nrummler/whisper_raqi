@@ -372,6 +372,25 @@ switch get(handles.pop_language,'Value')
         % definitions
         saqi_definition_english;
         TSP.sections{PP.edit_section_line,4}{1,14} = SAQI_definition;
+        
+    case 3 % RAQI english
+        % items and item categories
+        saqi_items_raqi_english;
+        TSP.sections{PP.edit_section_line,4}{1,6} = SAQI_Items;
+        saqi_categories_raqi_english;
+        TSP.sections{PP.edit_section_line,4}{1,12} = SAQI_categories;
+        % scale label
+        saqi_scale_label_raqi_english;
+        TSP.sections{PP.edit_section_line,4}{1,7} = SAQI_scale_label;
+        % assessment entities
+        saqi_entities_english;
+        TSP.sections{PP.edit_section_line,4}{1,11} = SAQI_Entities;
+        % phrases
+        saqi_phrases_english;
+        TSP.sections{PP.edit_section_line,4}{1,9} = SAQI_phrases;
+        % definitions
+        saqi_definition_raqi_english;
+        TSP.sections{PP.edit_section_line,4}{1,14} = SAQI_definition;
 end
 
 
